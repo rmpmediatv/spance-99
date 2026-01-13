@@ -2,12 +2,12 @@ body {
     color: #eee;
     /* font-family: Arial, Helvetica, sans-serif; */
     font-family: 'Space Mono', monospace;
-    background: #333;
+    background: #000;
     height: 100%;
     margin: 0;
     padding: 10px;
     box-sizing: border-box;
-    background-image: linear-gradient(90deg, rgb(48, 139, 146),rgb(46, 142, 110));
+    background-image: linear-gradient(135deg, #0a0a0a, #1a1a1a);
     background-size: cover;
 }
 
@@ -16,16 +16,16 @@ body {
 .left { float: left;  }
 
 a {
-    color: #a8edff;
+    color: #ff8800;
     font-weight: bold;
 }
 
 a:hover{
-    color: #85e3fc;
+    color: #ffaa00;
 }
 
 a:active{
-    color: #427d8d;
+    color: #cc6600;
 }
 
 html{
@@ -33,9 +33,9 @@ html{
 }
 
 #wrapper{
-    color: #545c79;
+    color: #c0c0c0;
 
-    background-color: #e8e4da;
+    background-color: #2a2a2a;
     /* border: 2px solid #d8d4ca; */
     padding: 1px 20px;
     -webkit-user-select: none; /* Safari */
@@ -44,8 +44,8 @@ html{
     position: relative;
     /* border-top: 5px solid rgba(255,255,255, 0.5); */
     /* border-top: 1px solid transparent; */
-    border-left: 15px solid rgb(93, 92, 86);
-    border-right: 15px solid rgb(93, 92, 86);
+    border-left: 15px solid #1a1a1a;
+    border-right: 15px solid #1a1a1a;
     box-sizing: border-box;
     /* border-bottom: 5px solid rgba(0,0,0, 0.5); */
     min-height: 710px;
@@ -61,10 +61,10 @@ html{
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 0.5;
+    opacity: 0.15;
     background-image: url('img/plastic_texture_1920.jpg');
     background-size: cover;
-    box-shadow:  inset 0 7px 9px rgb(255 255 255 / 90%), inset -1px -13px 15px rgb(0 0 0 / 50%)
+    box-shadow:  inset 0 7px 9px rgb(50 50 50 / 30%), inset -1px -13px 15px rgb(0 0 0 / 80%)
 }
 
 .header{
@@ -124,26 +124,26 @@ button {
     padding: 10px;
 }
 
-.highlight, #logotype { 
-    color: #fd8505;
+.highlight, #logotype {
+    color: #ff8800;
 }
 
 .highlight{
-    background-color: #272c3f; 
+    background-color: #1a1a1a;
 }
 
 .highlight:hover{
-    background-color:  #3f4761;;
+    background-color:  #2a2a2a;
 }
 
-.highlight:active, .highlight.active { 
-    background-color: #10131b; 
+.highlight:active, .highlight.active {
+    background-color: #0a0a0a;
 }
 
 
 
 .shift {
-    background-color: #f29d2b;
+    background-color: #ff8800;
     font-style: italic;
     font-weight: 700;
 }
@@ -181,7 +181,7 @@ button {
 .control_divider{
     height: 280px;
     float: left;
-    border-left: 2px solid #545c79;
+    border-left: 2px solid #404040;
     margin: 50px 0 0 0;
 }
 
@@ -292,11 +292,11 @@ button {
 .knob .indicator{
     height: 10px;
     width: 1px;
-    background: #fd8505;
+    background: #ff8800;
     position: absolute;
     top: 0px;
     left: 50%;
-    border-left: 3px solid #ed7505;
+    border-left: 3px solid #ff6600;
     /* border-right: 1px solid #666; */
 }
 
@@ -357,23 +357,23 @@ button {
 }
 
 .sequencer_button::before, .big_button::before{
-    background-color: #d1c8af;
+    background-color: #3a3a3a;
     content: ' ';
     position: absolute;
     display: block;
     top: 0;
     left: 0;
     background: transparent;
-    border-top: 3px solid #d7d5cf;
-    border-left: 8px solid #bbab8d;
-    border-bottom: 12px solid #b7b4ad;
-    border-right: 6px solid #5e5c5c;
+    border-top: 3px solid #4a4a4a;
+    border-left: 8px solid #2a2a2a;
+    border-bottom: 12px solid #2a2a2a;
+    border-right: 6px solid #1a1a1a;
     border-radius: 3px;
     z-index: -1;
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    box-shadow: 3px 3px 5px rgba(0,0,0,0.7);
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.9);
     overflow: hidden;
 }
 
@@ -384,9 +384,9 @@ button {
 .sequencer_button:active::before, .big_button:active::before{
     box-shadow: none;
     /*box-shadow: 2px -2px 2px rgb(0 0 0 / 50%); */
-    background-color: #aca080;
-    border-color: #8d8a81 #3e3c3c #87837a #74674f;
-    box-shadow: 2px 2px 3px rgba(0,0,0,0.5)
+    background-color: #2a2a2a;
+    border-color: #1a1a1a #0a0a0a #1a1a1a #0a0a0a;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.7)
     /* top: 4px; */
 }
 
@@ -400,7 +400,7 @@ button {
 } */
 
 .sequencer_button:nth-of-type(4n+1):before{
-    background-color: #fafafa;
+    background-color: #4a4a4a;
 }
 
 .big_button{
@@ -463,16 +463,16 @@ button {
 .active .squareled{
     /* box-shadow: inset 0 0 5px rgba(255, 66, 66, 0.99); */
     /* background-image: radial-gradient(rgb(222, 112, 112), rgb(134, 23, 23)); */
-    background-image: radial-gradient(rgb(222, 58, 58), rgb(139, 29, 29));
+    background-image: radial-gradient(rgb(255, 170, 0), rgb(255, 136, 0));
 
-    background-color: rgba(240, 0, 0, 0.7);
-    box-shadow: 0 0 5px rgba(235, 52, 52, 0.9);
+    background-color: rgba(255, 136, 0, 0.9);
+    box-shadow: 0 0 5px rgba(255, 136, 0, 0.9);
 }
 
 .accent .squareled{
-    background-image: radial-gradient(rgb(219, 155, 155), rgb(225, 73, 73), rgb(192, 35, 35));
-    background-color: rgba(240, 0, 0, 0.7);
-    box-shadow: 0 0 8px rgba(235, 52, 52, 0.9);
+    background-image: radial-gradient(rgb(255, 200, 100), rgb(255, 170, 0), rgb(255, 102, 0));
+    background-color: rgba(255, 136, 0, 0.9);
+    box-shadow: 0 0 10px rgba(255, 136, 0, 1);
     /* box-shadow: 0 0 5px rgba(209, 5, 5, 0.9); */
 }
 
@@ -491,15 +491,16 @@ button {
 }
 
 .led{
-    background-color:rgba(88, 4, 4, 0.7);
+    background-color:rgba(20, 20, 20, 0.9);
     width: 10px;
     height: 10px;
     float: left;
     margin: 10px -15px 0 5px;
     /* transition: box-shadow 0.5s linear; */
-    box-shadow: inset 0 0 5px rgba(255, 66, 66, 0.01);
+    box-shadow: inset 0 0 5px rgba(255, 136, 0, 0.01);
     transition: box-shadow 0.2s linear, background-color 0.2s linear;
     border-radius: 10px;
+    border: 1px solid #0a0a0a;
 
 }
 
@@ -510,8 +511,8 @@ button {
 }
 
 .led.active{
-    box-shadow: inset 0 0 5px rgba(255, 66, 66, 0.99);
-    background-color: rgba(240, 0, 0, 0.7);
+    box-shadow: inset 0 0 5px rgba(255, 136, 0, 0.99), 0 0 8px rgba(255, 136, 0, 0.6);
+    background-color: rgba(255, 136, 0, 0.9);
     transition: box-shadow 0.01s linear, background-color 0.01s linear;
 }
 
@@ -554,9 +555,9 @@ button {
 }
 
 #screen{
-    background:rgb(62, 3, 3);
-    color:rgba(240, 0, 0, 0.7);
-    text-shadow: 0px 1px 8px rgba(255, 66, 66, 0.66);
+    background:rgb(10, 10, 10);
+    color:rgba(255, 136, 0, 0.9);
+    text-shadow: 0px 1px 12px rgba(255, 136, 0, 0.8);
     font-size: 60px;
     font-family: 'Space Mono', monospace;
     letter-spacing: 10px;
@@ -567,16 +568,17 @@ button {
     width: 148px;
     text-align: right;
     text-transform: uppercase;
+    border: 2px solid #1a1a1a;
 }
 
 .led_button{
-    background-image: radial-gradient(rgb(87, 57, 57), rgb(130, 117, 117), rgb(90, 81, 81));
+    background-image: radial-gradient(rgb(60, 60, 60), rgb(40, 40, 40), rgb(30, 30, 30));
     width: 20px;
     height: 20px;
     margin: 0 5px;
     border-width: 2px;
     border-style: solid;
-    border-color: rgba(68, 68, 68, 0.35);
+    border-color: rgba(10, 10, 10, 0.5);
     box-sizing: border-box;
     overflow: visible;
     position: relative;
@@ -584,27 +586,27 @@ button {
 }
 
 .led_button.dim, .led_button.dim:hover{
-    background-image: radial-gradient(rgb(212, 212, 212), rgb(165, 165, 165), rgb(132, 132, 132));
+    background-image: radial-gradient(rgb(90, 90, 90), rgb(70, 70, 70), rgb(50, 50, 50));
 }
 
 .led_button.active{
-    background-image: radial-gradient(rgb(255, 186, 186), rgb(188, 13, 13), rgb(162, 72, 72));
-    border-color: rgba(177, 57, 57, 0.5);
+    background-image: radial-gradient(rgb(255, 200, 100), rgb(255, 136, 0), rgb(200, 100, 0));
+    border-color: rgba(255, 136, 0, 0.5);
     /* box-shadow: rgba(255, 66, 66, 0.66); */
-    box-shadow: 0 0 5px rgba(255, 61, 61, 0.7);
+    box-shadow: 0 0 8px rgba(255, 136, 0, 0.8);
 
 }
 
 .led_button:hover{
-    background-image: radial-gradient(rgb(67, 43, 43), rgb(106, 93, 93), rgb(71, 62, 62));
+    background-image: radial-gradient(rgb(70, 70, 70), rgb(50, 50, 50), rgb(40, 40, 40));
 }
 
 .led_button.active:hover{
-    background-image: radial-gradient(rgb(236, 176, 176), rgb(173, 14, 14), rgb(155, 74, 74));
+    background-image: radial-gradient(rgb(255, 210, 120), rgb(255, 150, 20), rgb(210, 110, 10));
 }
 
 .led_button:active, .led_button.active:active{
-    background-image: radial-gradient(rgb(130, 79, 79), rgb(86, 42, 42), rgb(44, 36, 36));
+    background-image: radial-gradient(rgb(50, 50, 50), rgb(30, 30, 30), rgb(20, 20, 20));
 }
 
 
@@ -668,18 +670,19 @@ hr{
     letter-spacing: 1px;
     border: 0px none;
     border-radius: 10px;
-    background: #e8e4da;
+    background: #3a3a3a;
+    color: #c0c0c0;
     position: relative;
 }
 
 .simple_button:hover{
-    background: #dcd7cb;
-    box-shadow: 0 0 5px rgba(255,255,255,0.5);
+    background: #4a4a4a;
+    box-shadow: 0 0 5px rgba(255,136,0,0.5);
 }
 
 .simple_button:active{
-    background: #c6c2b8;
-    box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+    background: #2a2a2a;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.7);
     top: 1px;
 }
 
